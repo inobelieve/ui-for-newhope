@@ -20,4 +20,4 @@ Vue.use(nhUI.nhButton);
 Vue.use(nhUI.all);
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+更过的UI需求请到 [需求池](http://vuejs.github.io/vue-loader).
