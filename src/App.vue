@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <nh-button>
-      <h1>测试按钮</h1>
+    <nh-button @click="clickTime++">
+      <h1>点击{{clickTime}}次</h1>
     </nh-button>
   </div>
 </template>
@@ -13,6 +13,7 @@
     components: {nhButton},
     data () {
       return {
+        clickTime: 0
       }
     }
   }
