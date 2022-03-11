@@ -20,17 +20,15 @@ const components = [
   nhInput
 ]
 
-const all = {
+const nhUI = {
   install(Vue) {
     components.forEach(component => {
       Vue.component(component.name, component);
     })
   }
 }
-let nhUI = {}
-Object.assign(nhUI, all, installedComponents)
 export {
-  all,
+  nhUI,
   nhButton,
   nhInput
 }
