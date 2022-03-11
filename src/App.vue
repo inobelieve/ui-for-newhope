@@ -3,17 +3,21 @@
     <nh-button type="primary" size="small" @click="handleClick">
       <h1>点击{{clickTime}}次</h1>
     </nh-button>
+    {{inputVal}}
+    <nh-input v-model="inputVal"></nh-input>
   </div>
 </template>
 
 <script>
   import nhButton from './nh-button'
+  import nhInput from './nh-input'
   export default {
     name: 'app',
-    components: {nhButton},
+    components: {nhButton, nhInput},
     data () {
       return {
-        clickTime: 0
+        clickTime: 0,
+        inputVal: '123'
       }
     },
     methods: {
