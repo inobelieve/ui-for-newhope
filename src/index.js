@@ -29,7 +29,6 @@ const installedComponents = ((components) => {
 })(components)
 
 const nhUI = {
-  ...installedComponents,
   install(Vue) {
     for (const name in components) {
       const component = components[name]
@@ -37,4 +36,5 @@ const nhUI = {
     }
   }
 }
+Object.assign(nhUI, installedComponents)
 export default nhUI
