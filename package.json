@@ -2,7 +2,7 @@
   "name": "ui-for-newhope",
   "description": "this is a UI project for New Hope Group company's business",
   "version": "0.0.1",
-  "author": "inobelieve",
+  "author": "inobelieve <514396432@qq.com>",
   "license": "ISC",
   "private": false,
   "main": "dist/build.js",
