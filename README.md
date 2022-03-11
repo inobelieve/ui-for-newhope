@@ -4,20 +4,21 @@
 
 ## 使用方法
 
+- 安装依赖
 ``` bash
 # npm install ui-for-newhope --save
-
-在main中引入
-
-import nhUI from 'ui-for-newhope'
-
-按需引入
-
-Vue.use(nhUI.nhButton);
-
-全部引入
-
-Vue.use(nhUI.all);
 ```
 
-更过的UI需求请到 [需求池(尚未搭建)](http://vuejs.github.io/vue-loader). 提交
+- 在main.js中全量引入
+```js
+import {nhUI} from 'ui-for-newhope'
+Vue.use(nhUI);
+```
+
+- 按需引入
+```js
+import {nhButton} from 'ui-for-newhope'
+Vue.use(nhButton);
+```
+
+更多的UI需求请到 [需求池(尚未搭建)](https://github.com/inobelieve/ui-for-newhope). 提交
