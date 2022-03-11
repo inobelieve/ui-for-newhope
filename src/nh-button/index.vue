@@ -1,15 +1,24 @@
 <template>
-    <div @click="btnClick" class="nh-button">
-      <slot name="default">暂无名字</slot>
+    <div class="nh-button">
+      <el-button :type="type" @click="btnClick">
+        <slot name="default">暂无名字</slot>
+      </el-button>
     </div>
 </template>
 
 <script>
     export default {
       name: 'nh-button',
+      props: {
+        type: {
+          type: String,
+          default: 'default',
+          required: false
+        }
+      },
       methods: {
-        btnClick() {
-          this.$emit('click', 'nh-button')
+        btnClick(e) {
+          this.$emit('click', e)
         }
       }
     }
@@ -17,6 +26,5 @@
 
 <style lang="scss" scoped>
   .nh-button {
-    background: red;
   }
 </style>

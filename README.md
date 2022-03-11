@@ -2,17 +2,22 @@
 
 > this is a UI project for New Hope Group company's business
 
-## Build Setup
+## 使用方法
 
 ``` bash
-# install dependencies
-npm install
+# npm install ui-for-newhope --save
 
-# serve with hot reload at localhost:8080
-npm run dev
+在main中引入
 
-# build for production with minification
-npm run build
+import nhUI from 'ui-for-newhope'
+
+按需引入
+
+Vue.use(nhUI.nhButton);
+
+全部引入
+
+Vue.use(nhUI.all);
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).

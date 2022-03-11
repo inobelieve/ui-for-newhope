@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nh-button @click="clickTime++">
+    <nh-button type="primary" size="small" @click="handleClick">
       <h1>点击{{clickTime}}次</h1>
     </nh-button>
   </div>
@@ -14,6 +14,12 @@
     data () {
       return {
         clickTime: 0
+      }
+    },
+    methods: {
+      handleClick(e) {
+        console.log(e)
+        this.clickTime++
       }
     }
   }

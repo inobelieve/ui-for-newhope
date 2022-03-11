@@ -12,7 +12,21 @@ module.exports = {
     umdNamedDefine: true
   },
   module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel',
+        query: {
+          presets: ['es2015']
+        }
+      }
+    ],
     rules: [
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
+        loader: 'file-loader'
+      },
       {
         test: /\.css$/,
         use: [
@@ -79,6 +93,9 @@ module.exports = {
     extensions: ['*', '.js', '.vue', '.json']
   },
   devServer: {
+    host: '127.0.0.1',
+    port: 8000,
+    open: false,
     historyApiFallback: true,
     noInfo: true,
     overlay: true
