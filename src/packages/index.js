@@ -4,10 +4,20 @@
  * @Date: 2022-03-16
  * @LastEditTime: 17:10:06
  */
-import nhBotton from './nh-button'
+import nhButton from './nh-button'
 import nhInput from './nh-input'
 
+const components = [nhButton ,nhInput]
+const nhUI = {
+    install (Vue) {
+        components.forEach(item => {
+            Vue => Vue.component(item.name, item);
+        })
+    }
+}
+
 export default {
+    nhUI,
     nhBotton,
     nhInput
 }
