@@ -1,7 +1,5 @@
-/uni_modules/
-/unpackage/
 /package-lock.json
-/dist/
+/yarn-lock.json
 .idea
 .vscode
 *.suo

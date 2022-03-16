@@ -10,8 +10,6 @@ const happyThreadPool = HappyPack.ThreadPool({
     size: os.cpus().length
 })
 const ParallelUglifyPlugin = require("webpack-parallel-uglify-plugin")
-// 分析报告
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 
 module.exports = {
@@ -20,7 +18,7 @@ module.exports = {
     },
     output:{
         path: path.join (__dirname, "..", "dist"),
-        filename:'js/[name].[hash:8].js',
+        filename:'js/[name].js',
         chunkFilename:'js/[name].[hash:8].js'
     },
     module:{
@@ -175,10 +173,6 @@ module.exports = {
                 }
             ],
             threadPool: happyThreadPool
-        }),
-        new BundleAnalyzerPlugin({
-            analyzerHost: '127.0.0.1',
-            analyzerPort: 8081
         }),
     ],
     optimization: {

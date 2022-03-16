@@ -5,7 +5,7 @@
   "author": "inobelieve <514396432@qq.com>",
   "license": "ISC",
   "private": false,
-  "main": "dist/build.js",
+  "main": "dist/js/nhUI.js",
   "keywords": [
     "ui-for-newhope",
     "newhope"
@@ -13,8 +13,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config build/webpack.config.js --mode production",
+    "component": "webpack --config build/webpack.component.js --mode production",
+    "dist": "npm run clean && npm run component && npm run build",
     "dev": "webpack-dev-server --config build/webpack.dev.js --open",
-    "analyz": "cross-env NODE_ENV=production npm_config_report=true npm run build"
+    "prod": "webpack-dev-server --config build/webpack.prod.js --open",
+    "analyz": "cross-env NODE_ENV=production npm_config_report=true npm run build",
+    "clean": "rimraf dist && rimraf packages/*/dist && rimraf test/**/coverage"
   },
   "browserslist": [
     "> 1%",
@@ -43,6 +47,7 @@
     "node-sass": "^7.0.1",
     "optimize-css-assets-webpack-plugin": "^6.0.1",
     "postcss-loader": "^6.2.1",
+    "progress-bar-webpack-plugin": "^2.1.0",
     "sass-loader": "^12.6.0",
     "style-loader": "^3.0.2",
     "uglifyjs-webpack-plugin": "^2.2.0",

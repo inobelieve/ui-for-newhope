@@ -1,0 +1,5 @@
+{
+  "nhUI": "./src/packages/index.js",
+  "input": "./src/packages/nh-input/index.js",
+  "button": "./src/packages/nh-button/index.js"
+}
