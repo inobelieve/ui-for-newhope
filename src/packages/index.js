@@ -18,6 +18,6 @@ const nhUI = {
 
 export default {
     nhUI,
-    nhBotton,
+    nhButton,
     nhInput
 }
