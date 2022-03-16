@@ -9,8 +9,8 @@
 </template>
 
 <script>
-  import nhButton from './nh-button'
-  import nhInput from './nh-input'
+  import nhButton from './packages/nh-button'
+  import nhInput from './packages/nh-input'
   export default {
     name: 'app',
     components: {nhButton, nhInput},
