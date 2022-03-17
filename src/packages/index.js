@@ -4,9 +4,9 @@
  * @Date: 2022-03-16
  * @LastEditTime: 17:10:06
  */
-import nhButton from './nh-button'
+import nhButton from './nh-button/index.js'
 // import nhButtonVue from './nh-button/index.vue'
-import nhInput from './nh-input'
+import nhInput from './nh-input/index.js'
 // import nhInputVue from './nh-input/index.vue'
 
 // const components = [nhButtonVue ,nhInputVue]

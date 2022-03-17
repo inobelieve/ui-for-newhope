@@ -5,7 +5,7 @@
   "author": "inobelieve <514396432@qq.com>",
   "license": "ISC",
   "private": false,
-  "main": "dist/js/app.js",
+  "main": "dist/app.js",
   "keywords": [
     "ui-for-newhope",
     "newhope"

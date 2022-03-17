@@ -13,11 +13,6 @@ const ParallelUglifyPlugin = require("webpack-parallel-uglify-plugin")
 
 
 module.exports = {
-    output:{
-        path: path.join (__dirname, "..", "dist"),
-        filename:'js/[name].js',
-        chunkFilename:'js/[name].[hash:8].js'
-    },
     module:{
         rules:[
             {
