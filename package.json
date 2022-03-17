@@ -1,11 +1,11 @@
 {
   "name": "ui-for-newhope",
   "description": "this is a UI project for New Hope Group company's business",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "author": "inobelieve <514396432@qq.com>",
   "license": "ISC",
   "private": false,
-  "main": "dist/app.js",
+  "main": "dist/nh-ui.js",
   "keywords": [
     "ui-for-newhope",
     "newhope"
