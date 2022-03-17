@@ -17,7 +17,7 @@ import nhInput from './nh-input'
 //     })
 // }
 
-export default {
+export {
     nhButton,
     nhInput
 }

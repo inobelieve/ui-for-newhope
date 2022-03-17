@@ -1,11 +1,11 @@
 {
   "name": "ui-for-newhope",
   "description": "this is a UI project for New Hope Group company's business",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "author": "inobelieve <514396432@qq.com>",
   "license": "ISC",
   "private": false,
-  "main": "dist/js/nhUI.js",
+  "main": "dist/js/app.js",
   "keywords": [
     "ui-for-newhope",
     "newhope"
@@ -13,7 +13,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config build/webpack.config.js --mode production",
-    "component": "webpack --config build/webpack.component.js --mode production",
+    "component": "npm run clean && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js --mode production",
     "dist": "npm run clean && npm run component && npm run build",
     "dev": "webpack-dev-server --config build/webpack.dev.js --open",
     "prod": "webpack-dev-server --config build/webpack.prod.js --open",

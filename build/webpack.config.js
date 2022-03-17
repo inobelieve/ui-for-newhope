@@ -1,5 +1,5 @@
 const path = require('path')
-const {CleanWebpackPlugin} = require('clean-webpack-plugin')
+// const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const vueLoaderPlugin = require('vue-loader/lib/plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
@@ -13,9 +13,6 @@ const ParallelUglifyPlugin = require("webpack-parallel-uglify-plugin")
 
 
 module.exports = {
-    entry:{
-        main:path.resolve(__dirname,'../src/main.js')
-    },
     output:{
         path: path.join (__dirname, "..", "dist"),
         filename:'js/[name].js',
@@ -149,7 +146,7 @@ module.exports = {
         extensions:['*','.js','.json','.vue']
     },
     plugins:[
-        new CleanWebpackPlugin(),
+        // new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template:path.resolve(__dirname,'../public/index.html')
         }),

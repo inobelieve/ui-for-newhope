@@ -13,6 +13,9 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = WebpackMerge.merge(webpackConfig,{
+    entry:{
+        main: path.resolve(__dirname,'../src/main.js')
+    },
     mode:'production',
     devtool:'cheap-module-source-map',
     plugins:[
